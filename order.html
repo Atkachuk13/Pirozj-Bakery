@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pirozj Bakery Order</title>
+    <link href="order_lay.css" rel="stylesheet"/>
+    <script src="dateTime.js" defer></script>
+</head>
+
+
+<body>
+<header>
+
+    <h2 id="timeHeading">Current Time</h2>
+         <div id="dateNow">11/8/2021<br />2:45:12 p.m.</div>
+
+    <h1>
+        <img src="logo.png" alt=""/>
+        Pirozj Bakery
+
+        <nav>
+            <a href="home.html" class="home-link">Home</a>
+            <a href="menu.html" class="menu-link">Menu</a>
+            <a href="order.html" class="order-link">Order</a>
+            <a href="contact_us.html" class="contact-link">Contact Us</a>
+        </nav>
+
+    </h1>
+
+
+</header>
+
+<article>
+    <h1>Order</h1>
+
+    <section>
+        <form id="order" action="http://www.example.com" method="post">
+            <fieldset id="orderInfo">
+                <legend>Order Information</legend>
+                <div class="formRow">
+                    <label for="name">Name*</label>
+                    <input name="custName" id="name" type="text" placeholder="first and last name" required>
+                </div>
+
+                <div class="formRow">
+                    <label for="street">Street address</label>
+                    <input name="custStreet" id="street" type="text"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="city">City</label>
+                    <input name="custCity" id="city" type="text" value="New York"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="state">State</label>
+                    <input name="custState" id="state" type="text" value="NY"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="zip">Postal Code</label>
+                    <input name="cystZip" id="zip" type="text" placeholder="nnnnn (-nnnn)"
+                           pattern="^\d{5}(-\d{4})?$"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="phone">Phone number</label>
+                    <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+                           pattern="^d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="mail">E-mail</label>
+                    <input name="custEmail" id="mail" type="email" required/>
+                </div>
+
+                <div class="formRow">
+                    <label for="info">Where did you hear about us?<br/>(select all that apply)</label>
+                    <select name="infoSrc" id="info" size="5" multiple>
+                        <option value="internet">Internet</option>
+                        <option value="fri">Friend</option>
+                        <option value="news">Newspaper</option>
+                        <option value="social">Social Media</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="formRow">
+                    <label for="info">What would you like to order><br/>(select all that apply)</label>
+                    <select name="orderList" id="orderList" size="15" multiple>
+                        <option value="croisant">Croissant</option>
+                        <option value="bagels">Bagels</option>
+                        <option value="cupcakes">Cupcakes</option>
+                        <option value="scones">Scones</option>
+                        <option value="danishes">Danishes</option>
+                        <option value="muffins">Muffins</option>
+                        <option value="cinamonRolls">Cinamon Rolls</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="cheesecake">Cheesecake</option>
+                        <option value=breadloaves>Bread Loaves</option>
+                        <option value="espresso">Espresso</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="americano">Americano</option>
+                        <option value="chaiLatte">Chai Latte</option>
+                        <option value="icedCoffee">Iced Coffee</option>
+                        <option value="herbalTea">Herbal Tea</option>
+                        <option value="hotChocolate">Hot Chocolate</option>
+                        <option value="Smoothie">Smoothie</option>
+                        <option value="matchaLatte">Matcha Latte</option>
+
+                    </select>
+                </div>
+
+                <div class="formRow">
+                    <label for="dish">What's your favorite dish?</label>
+                    <input name="favDish" id="dish" type="text" list="dishType"/>
+                    <datalist id="dishType">
+                        <option value="Croisants">
+                        <option value="Bagels">
+                        <option value="Cupcakes">
+                        <option value="Scones ">
+                        <option value="Danishes">
+                        <option value="Muffins">
+                        <option value="Cinamon Rolls">
+                        <option value="Cookies">
+                        <option value="Cheesecake">
+                        <option value="Bread Loaves">
+                    </datalist>
+                </div>
+
+                <div class="formRow">
+                    <label for="dineSpin">How many people is the order for?</label>
+                    <input name="dineOut" id="dineSpin" type="number"
+                           value="1" step="1" min="0" max="20"/>
+                </div>
+
+                <input name="mailMe" id="mailCB" value="yes" type="checkbox">
+                <label for="mailCB">Add me to your mailing list for great coupons and specials!
+                </label>
+
+            </fieldset>
+
+             <div id="buttons">
+            <input type="submit" value="Submit My Order"/>
+            <input type="reset" value="Cancel"/>
+        </div>
+
+
+        </form>
+
+    </section>
+</article>
+<footer>
+    <strong>Pirozj Bakery: We add a touch of spark into your life!</strong>
+</footer>
+</body>
+</html>

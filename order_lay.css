@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+html {
+   background: beige url(background.png);
+   height: 100%;
+}
+
+header img {
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+header h2 {
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+a {
+    color: #1a1d20;
+    font-family: "Lucida Handwriting";
+    cursor: pointer;
+    transition: opacity 0.15s;
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.home-link {
+    margin-left: 1130px;
+}
+
+a:hover {
+    color: tan;
+}
+
+
+
+header h1 {
+    font-size: 40px;
+    font-family: "Lucida Handwriting";
+    background-color: rosybrown;
+    height: 135px ;
+    border-radius: 18px;
+}
+article h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: "Lucida Handwriting";
+}
+
+
+ul{
+    margin-top: 50px;
+    font-family: cursive;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+h2 {
+    font-family: cursive;
+    margin-left: 300px;
+}
+
+footer {
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+
+
+/* Form Layout Styles */
+
+section {
+    font-family: cursive;
+}
+
+form#odrer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form#order > fieldset {
+    background-color: #c6acae;
+    border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+div.formRow > * {
+    flex: 1 1 150px;
+}
+
+/* Legend Styles */
+
+legend {
+    background-color: lightpink;
+    color: black;
+    padding: 5px;
+}
+
+/* Text Area Styles */
+
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;
+}
+
+/* Spinner Styles */
+
+div.formRow > input#dineSpin {
+    flex: 0 0 50px;
+}
+
+/* Form Button Styles */
+
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+
+

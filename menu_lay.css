@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+html {
+   background:  beige url(background.png);
+   height: 100%;
+}
+
+header img {
+    width: 70px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+
+a {
+    color: #1a1d20;
+    font-family: "Lucida Handwriting";
+    cursor: pointer;
+    transition: opacity 0.15s;
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.home-link {
+    margin-left: 1130px;
+}
+
+a:hover {
+    color: tan;
+}
+
+
+
+header h1 {
+    font-size: 40px;
+    font-family: "Lucida Handwriting";
+    background-color: rosybrown;
+    height: 135px ;
+    border-radius: 18px;
+}
+
+header h2 {
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+article h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: "Lucida Handwriting";
+}
+
+
+ul{
+    margin-top: 50px;
+    font-family: cursive;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+h2 {
+    font-family: cursive;
+    margin-left: 300px;
+}
+
+footer {
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
